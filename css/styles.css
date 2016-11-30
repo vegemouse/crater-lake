@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*:not(body):not(html) {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-size: contain;
+  color: white;
+  background: url(../img/crater-lake.jpg);
+  background-attachment: fixed;
+  background-repeat: none;
+  font-family: 'Oxygen', sans-serif;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 10px 705px 10px 0;
+}
+
+h1, h3, h4 {
+  font-family: 'Lora', serif;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+#wrap {
+  padding: 1% 5%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#navbar {
+  width: 100%;
+  height: 100px;
+}
+#navbar h3 {
+  width: 50%;
+  float: left;
+  font-size: 3em;
+  margin-top: 37px;
+
+}
+#navbar ul {
+  display: inline;
+  width: 45%;
+  float: right;
+  text-align: right;
+  margin-right: 5%;
+  margin-top: 65px;
+}
+#navbar li {
+  list-style: none;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: inline-block;
+  font-size: 1.3em;
+  border-bottom: 3px solid transparent; 
+  transition: border 500ms ;
+}
+#navbar li:hover {
+  cursor: pointer;
+  border-bottom: 3px solid white;
+
+}
+#title {
+  margin-top: 5%;
+  font-size: 2.3em;
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+#container {
+  margin-top: 5vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+
+.section {
+  float: left;
+  width: 23.5%;
+  height: 50%;
+  padding: 3%;
+  margin-left: 1%;
+  margin-right: 1%;
+  transition: color 600ms, background-color 600ms;
+}
+
+.section:hover {
+  background-color: #EEE;
+  color: #444;
+  cursor: pointer;
+}
+
+.section img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.section:nth-child(1) {
+  margin-left: 0;
+}
+
+.section:nth-child(4) {
+  margin-right: 0;
+}
+
+.section * {
+  width: 100%;
+}
+
+#container:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    width: 49%;
+  }
+  .section:nth-child(odd) {
+    margin-left: 0;
+  }
+  .section:nth-child(even) {
+    margin-right: 0;
+  }
+  #title {
+    font-size: 1.3em;
+  }
+  #navbar {
+    padding-left: 20px;
+  }
+  #navbar h3 {
+    font-size: 2.5em;
+  }
+  #navbar ul {
+    margin-top: 50px;
+  }
+  #navbar li {
+    font-size: 1em;
+  }
+  #wrap {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  .section {
+    width: 100%;
+  }
+
+  .section:nth-child(n) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #navbar {
+    height: auto;
+  }
+  #title {
+    font-size: 0.7em;
+    padding: 0 0 0 20px;
+  }
+  #navbar h3 {
+    margin-top: 2%;
+    width: 100%;
+  }
+  #navbar ul {
+    float: none;
+    width: 100%;
+  }
+  #navbar li {
+    font-size: 1.4em;
+    margin-left: 0;
+    margin-top: 1%;
+  }
+  #container {
+    margin-top: 2vh;
+  }
+}
