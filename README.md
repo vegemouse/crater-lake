@@ -1,5 +1,5 @@
 # Crater Lake
-### Created by _Maxwell Cady_ and _Erica Nafziger
+### Created by _Maxwell Cady_ and _Erica Nafziger_
 #### A responsive landing page for Crater Lake National Park.
 
 ## Setup Instructions
